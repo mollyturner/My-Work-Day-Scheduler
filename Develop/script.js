@@ -1,20 +1,96 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+var agendaBtn = document.getElementById('save-button-1');
+var agendaItem = document.getElementById('description-1');
+agendaItem.value = localStorage.getItem('agenda1');
 
-var today = dayjs();
-$('#currentDay').text(today.format('dddd, MMMM D, YYYY'));
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-1').value;
+
+  localStorage.setItem('agenda1', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-2');
+var agendaItem = document.getElementById('description-2');
+agendaItem.value = localStorage.getItem('agenda2');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-2').value;
+
+  localStorage.setItem('agenda2', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-3');
+var agendaItem = document.getElementById('description-3');
+agendaItem.value = localStorage.getItem('agenda3');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-3').value;
+
+  localStorage.setItem('agenda3', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-4');
+var agendaItem = document.getElementById('description-4');
+agendaItem.value = localStorage.getItem('agenda4');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-4').value;
+
+  localStorage.setItem('agenda4', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-5');
+var agendaItem = document.getElementById('description-5');
+agendaItem.value = localStorage.getItem('agenda5');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-5').value;
+
+  localStorage.setItem('agenda5', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-6');
+var agendaItem = document.getElementById('description-6');
+agendaItem.value = localStorage.getItem('agenda6');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-6').value;
+
+  localStorage.setItem('agenda6', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-7');
+var agendaItem = document.getElementById('description-7');
+agendaItem.value = localStorage.getItem('agenda7');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-7').value;
+
+  localStorage.setItem('agenda7', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-8');
+var agendaItem = document.getElementById('description-8');
+agendaItem.value = localStorage.getItem('agenda8');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-8').value;
+
+  localStorage.setItem('agenda8', agendaItem);
+});
+
+var agendaBtn = document.getElementById('save-button-9');
+var agendaItem = document.getElementById('description-9');
+agendaItem.value = localStorage.getItem('agenda9');
+
+agendaBtn.addEventListener('click', function () {
+  var agendaItem = document.getElementById('description-9').value;
+
+  localStorage.setItem('agenda9', agendaItem);
+});
+
+
 
 $(function () {
-
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  
-
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -28,5 +104,7 @@ $(function () {
   // attribute of each time-block be used to do this?
 
 
-  // TODO: Add code to display the current date in the header of the page.
+  var today = dayjs();
+  $('#currentDay').text(today.format('dddd, MMMM D, YYYY'));
+
 });
