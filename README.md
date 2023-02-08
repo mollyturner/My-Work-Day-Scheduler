@@ -27,8 +27,10 @@ THEN the saved events persist
 ```
 ## My Work Day Scheduler Screenshot
 
+![image](https://user-images.githubusercontent.com/93564137/217402563-a4f12738-1231-4f9f-933a-8768ad655ec0.png)
 
 
 ## Deployed URL
 
+https://mollyturner.github.io/My-Work-Day-Scheduler/
 
